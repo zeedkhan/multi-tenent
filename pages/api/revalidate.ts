@@ -5,7 +5,7 @@ export default async function handler(
   res: NextApiResponse
 ) {
   const { urlPath } = req.body;
-  res.setHeader("Access-Control-Allow-Origin", "https://app.vercel.pub");
+  res.setHeader("Access-Control-Allow-Origin", "https://app.multi-tenent.vercel.app");
   res.setHeader("Access-Control-Allow-Methods", "POST");
 
   try {
