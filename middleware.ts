@@ -38,8 +38,6 @@ export default async function middleware(req: NextRequest) {
           .replace(`.tanakit.app`, "")
       : hostname.replace(`.localhost:3000`, "");
 
-      console.log('asdasd', hostname)
-
   // rewrites for app pages
   if (currentHost == "app") {
     if (
