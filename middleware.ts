@@ -35,7 +35,7 @@ export default async function middleware(req: NextRequest) {
   const currentHost =
     process.env.NODE_ENV === "production" && process.env.VERCEL === "1"
       ? hostname
-          .replace(`.multi-tenent`, "")
+          .replace(`.tanakit.app`, "")
       : hostname.replace(`.localhost:3000`, "");
 
       console.log('asdasd', hostname)
